@@ -7,5 +7,10 @@ $(".codeContainer").height(codeContainerHeight+"px");
 $(".toggle").click(function(){
 	$(this).toggleClass("selected");
 	var activeDiv=$(this).html();
-	alert(activeDiv);
+	$("#"+activeDiv+"Container").toggle();
+	var showDiv=$(".codeContainer").filter(function(){
+		return($(this).css("display") != "none");
+
+	}).length;
+	alert(showDiv);
 });

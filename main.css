@@ -60,7 +60,7 @@ body{
 	right:10px;
 	top:10px;
 }
-#cssContainer, #jsContainer{
+#CSSContainer, #JSContainer{
 	display:none;
 }
 iframe{
