@@ -4,6 +4,7 @@ var codeContainerHeight=windowHeight-menuHeight;
 
 $(".codeContainer").height(codeContainerHeight+"px");
 
+
 $(".toggle").click(function(){
 	$(this).toggleClass("selected");
 	var activeDiv=$(this).html();
@@ -16,5 +17,8 @@ $(".toggle").click(function(){
 	$('.codeContainer').width(width+"%");
 });
 $('#run').click(function(){
-	$("iframe").contents().find("html").html($("#htmlCode").val());
+	$("#resultFrame").contents().find("html").html("<style>"+$('#cssCode').val()+"</style>"+$("#htmCodel").val());
+	document.getElementById('resultFrame').contentWindow.eval($('#jsCode').val());
+
 });
+
