@@ -12,5 +12,9 @@ $(".toggle").click(function(){
 		return($(this).css("display") != "none");
 
 	}).length;
-	alert(showDiv);
+	var width=100/showDiv;
+	$('.codeContainer').width(width+"%");
+});
+$('#run').click(function(){
+	$("iframe").contents().find("html").html($("#htmlCode").val());
 });
