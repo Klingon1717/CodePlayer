@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodePlayer</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="menu">
+		<div id="logo">CodePlayer</div>
+		<div id="buttContainer">
+		<button id="run">Run</button>
+		</div>
+		<ul id="toggles">
+			<li class="toggle selected">HTML</li>
+			<li class="toggle">CSS</li>
+			<li class="toggle">JS</li>
+			<li class="toggle selected" style="border:none">Result</li>
+		</ul>
+	</div>
+<div class="clear"></div>
+<div class="codeContainer" id="HTMLContainer">
+	<div class="codeLabel">HTML</div>
+	<textarea>saturn where are you</textarea>
+</div>
+<div class="codeContainer" id="CSSContainer">
+	<div class="codeLabel">CSS</div>
+	<textarea>saturn where are you</textarea>
+</div>
+<div class="codeContainer" id="JSContainer">
+	<div class="codeLabel">JS</div>
+	<textarea>saturn where are you</textarea>
+</div>
+<div class="codeContainer" id="ResultContainer">
+	<div class="codeLabel">Result</div>
+	<iframe></iframe>
+</div>
+</div>
+
+
+<script type="text/Javascript" src="jquery.min.js"></script>
+<script type="text/Javascript" src="main.js"></script>
+</body>
+</html>
