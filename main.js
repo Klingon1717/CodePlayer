@@ -17,7 +17,7 @@ $(".toggle").click(function(){
 	$('.codeContainer').width(width+"%");
 });
 $('#run').click(function(){
-	$("#resultFrame").contents().find("html").html("<style>"+$('#cssCode').val()+"</style>"+$("#htmCodel").val());
+	$("#resultFrame").contents().find("html").html("<style>"+$('#cssCode').val()+"</style>"+$("#htmlCode").val());
 	document.getElementById('resultFrame').contentWindow.eval($('#jsCode').val());
 
 });
